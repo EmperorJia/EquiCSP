@@ -1,0 +1,14 @@
+_target_: ${cspnet_target}
+hidden_dim: 512
+latent_dim: 256
+max_atoms: 100
+num_layers: 6
+act_fn: silu
+dis_emb: sin
+num_freqs: 128
+edge_style: fc
+max_neighbors: ${model.max_neighbors}
+cutoff: ${model.radius}
+ln: true
+ip: ${csp_ip}
+type_mlp: false
